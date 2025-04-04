@@ -1,0 +1,11 @@
+__pycache__/
+trainer.log
+checkpoints_swin_1/
+checkpoints_swin_5/
+checkpoints_unet_1/
+checkpoints_unet_5/
+checkpoints_unet_PINN/
+data/
+dataset_1/
+dataset_5/
+runs/
