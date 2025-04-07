@@ -9,7 +9,7 @@ import time
 
 from utils import *
 from diffusion import Diffusion
-from networks import Model
+from models.networks import Model
 from datasets import KolmogorovFlowDataset
 from residuals import ResidualOp
 

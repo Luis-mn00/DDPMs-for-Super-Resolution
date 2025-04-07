@@ -8,7 +8,7 @@ import torch.nn as nn
 import torch.optim as optim
 
 from utils import *
-from networks_baseline import Model_base
+from models.networks_baseline import Model_base
 from datasets import KolmogorovFlowDataset, LucaFlowDataset
 from residuals import ResidualOp
 

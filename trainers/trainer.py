@@ -16,7 +16,7 @@ from my_config_length import UniProjectionLength
 
 from utils import *
 from diffusion import Diffusion
-from networks import Model
+from models.networks import Model
 from datasets import KolmogorovFlowDataset, LucaFlowDataset
 from residuals import residual_fourier, ResidualOp
 

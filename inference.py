@@ -9,10 +9,10 @@ from sklearn.metrics import mean_squared_error
 
 from utils import *
 from diffusion import Diffusion
-from networks import Model
-from networks_baseline import Model_base
+from models.networks import Model
+from models.networks_baseline import Model_base
 from datasets import KolmogorovFlowDataset, LucaFlowDataset
-from network_swinir import SwinIR
+from models.network_swinir import SwinIR
 
 from experiments import *
 from pod import *

@@ -9,7 +9,7 @@ import torch.optim as optim
 
 from utils import *
 from datasets import KolmogorovFlowDataset, LucaFlowDataset
-from network_swinir import SwinIR
+from models.network_swinir import SwinIR
 
 def save_dataset(low_res_images, high_res_images, dataset_path):
     np.save(os.path.join(dataset_path, 'low_res_images.npy'), low_res_images)
