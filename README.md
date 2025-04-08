@@ -13,3 +13,7 @@ The training of these models was done using the `trainer.py` script. Run `python
 
 ## Sampling examples
 Examples of how to run the code to use the models can be found in the `experiments.py` script, where every function is an indepentend experiment, which loads the dataset, loads a pre-trained model, and generates samples using the diffusion model. 
+
+## Use 
+
+In `trainer.py` you can find a general class to use the models and run some experiments. It also allows to compare the different variants of diffusion super-resolution models with its UNet baseline trained with regression, POD and the SwinIR model.
