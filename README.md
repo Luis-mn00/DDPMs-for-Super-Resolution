@@ -16,4 +16,4 @@ Examples of how to run the code to use the models can be found in the `experimen
 
 ## Use 
 
-In `trainer.py` you can find a general class to use the models and run some experiments. It also allows to compare the different variants of diffusion super-resolution models with its UNet baseline trained with regression, POD and the SwinIR model.
+In `inference.py` you can find a general class to use the models and run some experiments. It also allows to compare the different variants of diffusion super-resolution models with its UNet baseline trained with regression, POD and the SwinIR model.
