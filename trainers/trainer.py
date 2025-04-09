@@ -162,7 +162,11 @@ def diffusion_PINN_step(model, diffusion, y, scaler, optimizer, loss_m, residual
 
     with torch.no_grad():
         if kargs["eq_res"] < 0:
-            coef = mse_loss / eq_res_m
+            #coef = mse_loss / eq_res_m
+            c = 0.005
+            sigma = (1 - diffusion.alphas_b_prev[t]) / (1 - diffusion.alphas_b[t]) * diffusion.betas[t]
+            sigma_bar = sigma.mean() / c
+            coef = 1 / (2 * sigma_bar)
         else:
             coef = kargs["eq_res"]
 
